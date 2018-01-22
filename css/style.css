@@ -1,3 +1,34 @@
-.canvas {
-  border: 1px solid red;
+h1 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+#game {
+  background: url("./../images/motherboard.png");
+  width: 1178px;
+  height: 1280px;
+  display:block;
+  margin:auto;
+}
+
+#butterfly img{
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+}
+
+#ant img{
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+}
+
+#cockroach img{
+  display: inline-block;
+  width: 25%;
+  height: 25%;
 }
