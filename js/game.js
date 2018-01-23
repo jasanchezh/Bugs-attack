@@ -21,3 +21,12 @@ function draw() {
 }
 setInterval(draw, 10);
 };*/
+
+	$(document).ready(function(){
+		$("#mostrar").on( "click", function() {
+			$('.butterfly').show(); //muestro mediante clase
+		 });
+		$("#ocultar").on( "click", function() {
+			$('.butterfly').hide(); //muestro mediante clase
+		});
+	});
