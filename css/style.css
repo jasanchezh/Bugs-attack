@@ -16,19 +16,16 @@ body {
 }
 
 #butterfly img{
-  float: left;
   width: 15%;
   height: 15%;
 }
 
 #ant img{
-  float: left;
   width: 15%;
   height: 15%;
 }
 
 #cockroach img{
-  float: left;
   width: 15%;
   height: 15%;
 }

@@ -1,4 +1,5 @@
 function bug(type, position){
     this.type = type;
-    this.position = position;
+    this.x = x;
+    this.y = y;
 }
