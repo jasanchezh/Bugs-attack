@@ -1,6 +1,10 @@
 $(document).ready(function(){
+  $("#start").on( "click", function() {
+    start();
+    });
+   });
 
-
+   function start(){
 		$("#butterfly").on( "click", function() {
 			$('#butterfly').hide(); //muestro mediante id
 		 });
@@ -10,4 +14,4 @@ $(document).ready(function(){
       $("#cockroach").on( "click", function() {
         $('#cockroach').hide(); //muestro mediante id
        });
-   });
+   }
