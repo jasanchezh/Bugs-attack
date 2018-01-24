@@ -3,9 +3,9 @@ h1 {
   color: white;
 }
 
-body {
+/* body {
   background-color: black;
-}
+} */
 
 #game {
   /* background: url("./../images/motherboard.png"); */
@@ -13,7 +13,7 @@ body {
   height: 800px;
   display:block;
   margin:auto;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 #butterfly img{
