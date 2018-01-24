@@ -8,11 +8,12 @@ body {
 }
 
 #game {
-  background: url("./../images/motherboard.png");
-  width: 1178px;
-  height: 1280px;
+  /* background: url("./../images/motherboard.png"); */
+  width: 600px;
+  height: 800px;
   display:block;
   margin:auto;
+  border: 1px solid white;
 }
 
 #butterfly img{
