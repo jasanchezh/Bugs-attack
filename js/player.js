@@ -1,5 +1,4 @@
-function player(name, position, score){
+function player(name, score){
     this.name = name;
-    this.position = position;
-    this.score = score
+    this.score = 0;
 }
