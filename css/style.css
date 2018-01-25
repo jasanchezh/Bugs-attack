@@ -1,32 +1,14 @@
-h1 {
-  text-align: center;
-  color: white;
+canvas {
+  border: 1px solid red;
+  margin-top: 1%;
 }
 
-/* body {
-  background-color: black;
-} */
-
-#game {
-  /* background: url("./../images/motherboard.png"); */
-  width: 600px;
-  height: 800px;
-  display:block;
-  margin:auto;
-  border: 1px solid black;
+body {
+    text-align: center;
+    background-color: white;
 }
 
-#butterfly img{
-  width: 15%;
-  height: 15%;
-}
+body h1{
+  color: black;
+};
 
-#ant img{
-  width: 15%;
-  height: 15%;
-}
-
-#cockroach img{
-  width: 15%;
-  height: 15%;
-}

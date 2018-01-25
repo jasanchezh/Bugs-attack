@@ -1,24 +1,20 @@
-function Bug(type, x, y, width, heigth) {
-    this.type = type;
+function Bug(ctx, x, y) {
     this.x = x;
     this.y = y;
-    this.width = width;
-    this.heigth = heigth;
-    this.speedY = 1
-    
-    // Add random image to dom 
-    var bugClass = ["butterfly", "bug", "cockroach"]
-    var value = Math.floor(Math.random()*3);
-    this.el = $('<img>').attr('src','images/' + bugClass[value] + '.png');
-    $('#game').append(this.el);
+    this.speed = 3 + Math.floor(Math.random()*3);
+    this.ctx = ctx;
+
+    var bugClass = ["ant"];
+    var value = Math.floor(Math.random() * bugClass.length);
+    this.image = new Image();
+    this.image.src = 'images/' + bugClass[value] + '.png';
 }
 
-Bug.prototype.update = function(){
-    this.y += (this.speedY * 10);
-    // if(this.x >= $("#board").width() || this.x <= 0){
-    //   this.speedX *= -1;
-    // }
-    /*if(this.y >= $("#game").height() || this.y <= 0){
-      this.speedY *= -1;
-    };*/
-  }
+Bug.prototype.update = function () {
+    this.y += this.speed;
+}
+
+
+Bug.prototype.draw = function () {
+    this.ctx.drawImage(this.image, this.x, this.y ,50,60);
+}

@@ -1,13 +1,8 @@
-var game
-$(document).ready(function () {
-  $("#start").on("click", function () {
-    game = new Game()
-    start();
-  })
-
-  setInterval(function () {
-    game.bug1.update();
-  }, 10);
+$(document).ready(function(){
+    var game = new Game();
+    window.requestAnimationFrame(update);
+    function update(){
+        game.update();
+        window.requestAnimationFrame(update);
+    }
 });
-
-

@@ -1,11 +1,23 @@
-function Game() {
-    this.level = 1;
-    this.bug1 = new Bug("bug1", this.generatePath(), 0, 50, 50);
+function Game(){
+    var canvas = document.getElementById('canvas');
+    this.ctx = canvas.getContext('2d');
+    this.bugs = [];
+    var that = this;
+    setInterval(function(){
+        that.createBug();
+    },3000);
 }
 
-Game.prototype.generatePath = function () {
-    var positions = [0, 200, 400, 600, 800, 1000];
-    var path = Math.floor(Math.random() * (5 - 1) + 1);
-    
-    return positions[path];
+Game.prototype.createBug = function(){
+    var x_pos = Math.floor(Math.random() * 922);
+    this.bugs.push(new Bug(this.ctx,x_pos,10));
+}
+
+
+Game.prototype.update = function(){
+    this.ctx.clearRect(0, 0, 1000, 920);
+    this.bugs.forEach(function(bug){
+        bug.update();
+        bug.draw();
+    })
 }
