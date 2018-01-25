@@ -13,3 +13,6 @@ Player.prototype.update = function () {
 Player.prototype.drawPlayer = function () {
     this.ctx.drawImage(this.image, this.x, this.y, 50, 60);
 }
+
+Player.prototype.moveLeft = function () { this.x -= 25 };
+Player.prototype.moveRight = function () { this.x += 25 };
