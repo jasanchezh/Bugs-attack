@@ -4,6 +4,7 @@ function Player(ctx) {
     this.image = new Image();
     this.image.src = 'images/player.png';
     this.ctx = ctx;
+    this.lives = 5;
 }
 
 Player.prototype.update = function () {

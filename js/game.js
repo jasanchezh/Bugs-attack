@@ -20,6 +20,13 @@ Game.prototype.update = function () {
     this.bugs.forEach(function (bug) {
         bug.update();
         bug.draw();
+        this.checkCollision(this.player1,bug);
     })
     this.player1.drawPlayer();
+}
+
+Game.prototype.checkCollision = function (player, bug) {
+    if (bug.x > player1.x + player1.width && bug.y < player1.y + player1.height) { player1.lives--; }
+    if (player1.lives < 1) { prompt("Game Over") }
+    return player1.lives;
 }
