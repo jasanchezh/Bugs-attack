@@ -5,7 +5,6 @@ function Game() {
     var that = this;
     this.player1 = new Player(this.ctx);
     setInterval(function () {
-        this.checkCollision(this.player1,bug);
         that.createBug();
     }, 3000);
 }
@@ -21,7 +20,7 @@ Game.prototype.update = function () {
     this.bugs.forEach(function (bug) {
         bug.update();
         bug.draw();
-
+//        this.checkCollision(this.player1,bug);
     })
     this.player1.drawPlayer();
 }
