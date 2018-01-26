@@ -8,6 +8,7 @@ function Bug(ctx, x, y) {
     var value = Math.floor(Math.random() * bugClass.length);
     this.image = new Image();
     this.image.src = 'images/' + bugClass[value] + '.png';
+
 }
 
 Bug.prototype.update = function () {

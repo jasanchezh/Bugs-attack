@@ -1,6 +1,6 @@
 function Player(ctx) {
-    this.x = 500;
-    this.y = 600;
+    this.x = 400;
+    this.y = 700;
     this.image = new Image();
     this.image.src = 'images/player.png';
     this.ctx = ctx;

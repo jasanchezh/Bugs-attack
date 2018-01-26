@@ -17,10 +17,13 @@ Game.prototype.createBug = function () {
 
 Game.prototype.update = function () {
     this.ctx.clearRect(0, 0, 1000, 920);
+
+    this.image2 = new Image();
+    this.image2.src = 'images/bg.png';
+    this.ctx.drawImage(this.image2,0,0);
     this.bugs.forEach(function (bug) {
         bug.update();
         bug.draw();
-//        this.checkCollision(this.player1,bug);
     })
     this.player1.drawPlayer();
 }

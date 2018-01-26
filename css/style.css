@@ -1,7 +1,7 @@
-canvas {
+/* canvas {
   border: 1px solid red;
-
-}
+ 
+} */
 
 body {
     text-align: center;
@@ -11,3 +11,5 @@ body {
 body h1{
   color: black;
 };
+
+.btn
